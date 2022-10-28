@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#troll {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+#success {
+  position: absolute;
+  top: 4%;
+  display: none;
+  width: min-content;
+  padding: 5px 10px;
+  background-color: #b8fbd5;
+}
+
+.why-r-u-gae {
+  animation-name: gae;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes gae {
+  0% {
+    color: #00ff26;
+  }
+  20% {
+    color: #00ffb1;
+  }
+  40% {
+    color: #00fff6;
+  }
+  60% {
+    color: #009cff;
+  }
+  80% {
+    color: #0030ff;
+  }
+
+  100% {
+    color: #00ff26;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+button {
+  padding: 5px 10px;
+}

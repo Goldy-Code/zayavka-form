@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>YOUR BUNNY WROTE</title>
+  </head>
+  <body>
+    <div id="success">Отправилено!</div>
+    <form id="tg">
+      <div class="label">
+        <label>Фамилия и Имя:</label>
+        <input name="name" type="text" />
+      </div>
+      <div class="label">
+        <label>Сколько лет?</label>
+        <input name="years" type="text" />
+      </div>
+      <div class="label">
+        <label>Любимый цвет:</label>
+        <input name="color" type="text" />
+      </div>
+      <div class="label">
+        <label>Почта:</label>
+        <input name="email" type="email" />
+      </div>
+      <div class="label">
+        <label>Номер тел.:</label>
+        <input name="num" value="+998" type="tel" />
+      </div>
+      <div class="label">
+        <label>Дата:</label>
+        <input name="date" type="date" />
+      </div>
+      <div class="label">
+        <label>Пол:</label>
+        <div>
+          <input type="radio" name="gender" value="Мужик" />
+          <label>Мужик</label>
+        </div>
+        <div>
+          <input type="radio" name="gender" value="Баба" />
+          <label>Баба</label>
+        </div>
+        <div>
+          <input type="radio" name="gender" value="Хуй его знает что" />
+          <label>Хуй его знает что</label>
+        </div>
+      </div>
+
+      <div>
+        <label>Кем ты себя считаешь?</label>
+        <select name="select" id="select">
+          <option value="---" selected disabled>---</option>
+          <option class="why-r-u-gae" value="Пидор">Пидор</option>
+          <option class="why-r-u-gae" value="Пидрила">Пидрила</option>
+          <option class="why-r-u-gae" value="Пидарасина">Пидарасина</option>
+          <option class="why-r-u-gae" value="Пидарасище">Пидарасище</option>
+          <option class="why-r-u-gae" value="ГигаЧад">ГигаЧад</option>
+          <option class="why-r-u-gae" value="БабаЧад">БабаЧад</option>
+        </select>
+      </div>
+
+      <div class="buttons">
+        <button type="reset">Очистить</button>
+        <button type="submit">Отправить</button>
+      </div>
+    </form>
+
+    <span id="troll"
+      >Отправляя данную форму вы соглашаетесь с политикой
+      конфиденциальности</span
+    >
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
