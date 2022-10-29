@@ -5,8 +5,7 @@ const success = document.getElementById('success');
 
 document.getElementById('tg').addEventListener('submit', function (e) {
     e.preventDefault();
-
-
+    
     let message = `<b>Це заявка!</b>\n`;
     message += `<b>Фамилия и Имя:</b> ${this.name.value} \n`;
     message += `<b>Сколько лет?</b> ${this.years.value} \n`;

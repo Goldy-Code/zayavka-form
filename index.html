@@ -12,47 +12,47 @@
     <form id="tg">
       <div class="label">
         <label>Фамилия и Имя:</label>
-        <input name="name" type="text" />
+        <input name="name" type="text" required/>
       </div>
       <div class="label">
         <label>Сколько лет?</label>
-        <input name="years" type="text" />
+        <input name="years" type="text" maxlength="2" required/>
       </div>
       <div class="label">
         <label>Любимый цвет:</label>
-        <input name="color" type="text" />
+        <input name="color" type="text" required/>
       </div>
       <div class="label">
         <label>Почта:</label>
-        <input name="email" type="email" />
+        <input name="email" type="email" required/>
       </div>
       <div class="label">
         <label>Номер тел.:</label>
-        <input name="num" value="+998" type="tel" />
+        <input name="num" value="+998" type="tel" maxlength="13" required />
       </div>
       <div class="label">
         <label>Дата:</label>
-        <input name="date" type="date" />
+        <input name="date" type="date" required/>
       </div>
       <div class="label">
         <label>Пол:</label>
         <div>
-          <input type="radio" name="gender" value="Мужик" />
+          <input type="radio" name="gender" value="Мужик" required/>
           <label>Мужик</label>
         </div>
         <div>
-          <input type="radio" name="gender" value="Баба" />
+          <input type="radio" name="gender" value="Баба" required/>
           <label>Баба</label>
         </div>
         <div>
-          <input type="radio" name="gender" value="Хуй его знает что" />
+          <input type="radio" name="gender" value="Хуй его знает что" required/>
           <label>Хуй его знает что</label>
         </div>
       </div>
 
       <div>
         <label>Кем ты себя считаешь?</label>
-        <select name="select" id="select">
+        <select name="select" id="select" >
           <option value="---" selected disabled>---</option>
           <option class="why-r-u-gae" value="Пидор">Пидор</option>
           <option class="why-r-u-gae" value="Пидрила">Пидрила</option>
